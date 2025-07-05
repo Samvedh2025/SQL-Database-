@@ -1,3 +1,5 @@
+
+# Hello
 # SQL-Database-
 # MySql
 
@@ -73,9 +75,4 @@ Insert into test(ID,name) values(1,'sandy');
 
 ```sql
 select * from test;
-```
-
-# to display data from certain colums
-```sql
-select name,ID from drive;
 ```
