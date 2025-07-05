@@ -75,11 +75,41 @@ Insert into test(ID,name) values(1,'sandy');
 select * from test;
 ```
 
-# to display data from certain colums
+# to display data from certain columns
 ```sql
 select name,ID from drive;
 ```
 #To display certain data by rows:
 ```sql
 select * from drive where(name="sandy")
+```
+
+# where clause
+| Operator     | Description      | Example          |
+| ------------ | ---------------- | ---------------- |
+| =          | Equal to         | salary = 50000 |
+| != or <> | Not equal to     | name != 'John' |
+| >          | Greater than     | age > 30       |
+| <          | Less than        | stock < 100    |
+| >=         | Greater or equal | score >= 60    |
+| <=         | Less or equal    | rating <= 4.5  |
+
+EX:
+```sql
+--Filter by Columns
+select age,name from drive;
+--Filter by Rows using = operator/Equal To operator
+select * from drive where(name="samiam");
+--Filter by Rows using <> operator/ Not Equal to operator
+select * from drive where(name<>"samiam");
+--Filter by Rows using != operator/ Not Equal to operator
+select * from drive where(name!="samiam");
+--Filter by Rows using > operator/ Greater Than operator
+select * from drive where(age>20);
+--Filter by Rows using < operator/ Less than operator
+select * from drive where(age<20);
+--Filter by Rows using <= operator/Less than or equal to Operator
+select * from drive where(age<=21)
+--Filter by Rows using >= operator/ Greater than or equal to Operator
+select * from drive where(age>=21)
 ```
