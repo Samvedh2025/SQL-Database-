@@ -79,3 +79,7 @@ select * from test;
 ```sql
 select name,ID from drive;
 ```
+#To display certain data by rows:
+```sql
+select * from drive where(name="sandy")
+```
