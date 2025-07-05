@@ -28,10 +28,10 @@ A database is an organized collection of data stored electronically. It allows u
 
 # Table
 
-
+In a database, a table is a structured collection of data organized into rows and columns. 
 
 # Schema
-
+A schema specifies the names of tables, the attributes (fields or columns) within each table, and the data types of those attributes (e.g., text, number, date). Think of it as a blueprint of the table.
 
 # create database in SQL:
 
