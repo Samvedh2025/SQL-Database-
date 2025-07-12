@@ -145,3 +145,26 @@ select * from drive where(name="samiam" and age>20);
 -filter using or operator
 select * from drive where(name="samiam" or name="maimas");
 ```
+#Today's Code, 7,12,2025, July 12th
+```sql
+create table school(name varchar(30) not null, id int(10) not null primary key,age int(5),grade int(3) not null);
+
+insert into school(name,id,grade,age) values("Beach",7298301, 9, 14);
+
+insert into school(name,id,grade) values("Sandy",9187329, 12);
+
+insert into school(name,id,grade,age) values("Wonder",7654892, 10, 15);
+insert into school(name,id,grade) values("Render",8976543, 9);
+insert into school(name,id,grade,age) values("Walter",6327819, 12, 19);
+insert into school(name,id,grade) values("John",5482931, 11);
+insert into school(name,id,grade,age) values("Mat",8302749, 5, 10);
+insert into school(name,id,grade,age) values("Hunter",1920364, 7, 11);
+insert into school(name,id,grade,age) values("Groot",1928304, 8, 13);
+insert into school(name,id,grade,age) values("Rose",1983278, 9, 16);
+
+select * from school;
+
+select distinct grade from school;
+
+select * from school where age between 13 and 16
+```
