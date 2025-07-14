@@ -175,3 +175,10 @@ create table school(name varchar(30) not null, id int(10) not null primary key,a
 --What it does is it makes it that, that feild when entered mandatory
 --by making it that, that feild cannot have a option called Null which mean nothing
 ```
+#Primary key
+```sql
+create table school(name varchar(30) not null, id int(10) not null primary key,age int(5),grade int(3) not null);
+--Primary key is a constraint.
+--When using primary key you have to put a value for it.
+--Primary key makes it that it has unique values so no duplicates.
+```
