@@ -171,5 +171,7 @@ select * from school where age between 13 and 16
 #Not Null
 ```sql
 create table school(name varchar(30) not null, id int(10) not null primary key,age int(5),grade int(3) not null);
--- Not null is a constraint. What it does is it makes it that that feild when entered mandatory by making it that that feild cannot have a option called Null which mean nothing
+-- Not null is a constraint.
+--What it does is it makes it that that feild when entered mandatory
+--by making it that that feild cannot have a option called Null which mean nothing
 ```
