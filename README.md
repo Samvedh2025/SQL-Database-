@@ -182,3 +182,43 @@ create table school(name varchar(30) not null, id int(10) not null primary key,a
 --When using primary key you have to put a value for it.
 --Primary key makes it that it has unique values so no duplicates.
 ```
+
+#Distinct
+```sql
+select distinct grade from school;
+--It removes duplicates and prints only the unique ones.
+--it doesn't remove values from the table
+```
+#CODE
+```sql
+create database test;
+create table test_table3(id int(5) , name varchar(20) , country varchar(20));
+
+insert into test_table3(id,name,country) values(1,"sandy","India");
+insert into test_table3(id,name,country) values(2,"andy","India");
+insert into test_table3(id,name,country) values(3,"ndy","India");
+
+insert into test_table3(id,name,country) values(4,"sandy","US");
+insert into test_table3(id,name,country) values(5,"andy","US");
+insert into test_table3(id,name,country) values(6,"ndy","US");
+
+insert into test_table3(id,name,country) values(7,"sandy","Africa");
+insert into test_table3(id,name,country) values(8,"andy","Africa");
+insert into test_table3(id,name,country) values(9,"ndy","Africa");
+
+select * from test_table3 where country not in ("India","US");
+
+
+select * from test_table3 where country like 'I%';
+
+
+select * from test_table3 where country like '__d%';
+```
+
+#not in
+it is used to filter data. it is used in where, and displays the rows which the column's vlaue doesn't match the value given
+```sql
+select * from test_table3 where country not in ("India","US");
+```
+#Like
+it is an operator.
