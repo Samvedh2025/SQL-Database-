@@ -224,8 +224,10 @@ select * from test_table3 where country not in ("India","US");
 it is an operator.
 ```sql
 --The SQL LIKE operator is used in the WHERE clause to search for a specified pattern within a column.
---The _ wildcard represents a single character. in this case it is saying the there needs to be 2 letters before d because there is 2 underscores
---The % wildcard represents any number of characters, even zero characters. In this case it is saying that there can be any number of letters after d.
+--The _ wildcard represents a single character.
+--in this case it is saying the there needs to be 2 letters before d because there is 2 underscores
+--The % wildcard represents any number of characters, even zero characters.
+--In this case it is saying that there can be any number of letters after d.
 select * from test_table3 where country like '__d%';
 ```
 
@@ -257,5 +259,6 @@ select * from customers where first_name like 'D%';
 select * from customers where first_name like '%y';
 select * from customers where first_name like '[A-G]%';
 select * from customers where last_name like '[d]%';
--- these brackets [] are used to give a range in this case in the last to second query we gave a range that the first letter has to be A and G and can be A or G.
+-- these brackets [] are used to give a range.
+- in this case in the last to second query we gave a range that the first letter has to be A and G and can be A or G.
 ```
