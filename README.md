@@ -262,3 +262,22 @@ select * from customers where last_name like '[d]%';
 -- these brackets [] are used to give a range.
 -- in this case in the last to second query we gave a range that the first letter has to be A and G and can be A or G.
 ```
+UPDATE QUERY
+```sql
+----It is the WHERE clause that determines how many records will be updated.
+--syntax:
+--UPDATE table_name
+--SET column1 = value1, column2 = value2, ...
+--WHERE condition;
+--From CODE:
+update Customers set first_name="sandy";
+--In this we are making it that all the names in the first_name column 
+create table tests(id int(10) primary key , name varchar(10) unique);
+insert into tests(id,name) values(1,'landy');
+insert into tests(id,name) values(12,'bandy');
+insert into tests(id,name) values(13,'randy');
+--we are creating a table and inputing values here
+update tests set name="candy" where id=1;
+-- here I am updating the name of the person with a id of 1 to candy
+select * from tests;
+```
