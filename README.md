@@ -260,5 +260,5 @@ select * from customers where first_name like '%y';
 select * from customers where first_name like '[A-G]%';
 select * from customers where last_name like '[d]%';
 -- these brackets [] are used to give a range.
-- in this case in the last to second query we gave a range that the first letter has to be A and G and can be A or G.
+-- in this case in the last to second query we gave a range that the first letter has to be A and G and can be A or G.
 ```
