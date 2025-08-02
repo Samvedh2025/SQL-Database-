@@ -216,9 +216,15 @@ select * from test_table3 where country like '__d%';
 ```
 
 #not in
-it is used to filter data. it is used in where, and displays the rows which the column's vlaue doesn't match the value given
 ```sql
+#it is used to filter data. it is used in where, and displays the rows which the column's vlaue doesn't match the value given
 select * from test_table3 where country not in ("India","US");
 ```
 #Like
 it is an operator.
+```sql
+#The SQL LIKE operator is used in the WHERE clause to search for a specified pattern within a column.
+##The _ wildcard represents a single character. in this case it is saying the there needs to be 2 letters before d because there is 2 underscores
+#The % wildcard represents any number of characters, even zero characters. In this case it is saying that there can be any number of letters after d.
+select * from test_table3 where country like '__d%';
+```
