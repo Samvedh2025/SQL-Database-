@@ -281,3 +281,19 @@ update tests set name="candy" where id=1;
 -- here I am updating the name of the person with a id of 1 to candy
 select * from tests;
 ```
+Aggregate functions
+```sql
+--AVG(): Calculates the average of a set of numeric values within a specified column.
+--SUM(): Calculates the total sum of a set of numeric values within a specified column.
+--MIN(): Returns the smallest (minimum) value within a specified column.
+--COUNT():
+--  Returns the number of rows that match a specified criterion. 
+--  COUNT(*) counts all rows, including those with NULL values.
+--  COUNT(column_name) counts non-NULL values in the specified column.
+--  COUNT(DISTINCT column_name) counts the number of unique non-NULL values in the specified column.
+select avg (age) from customers;
+Select count(first_name) from customers where first_name="John";
+Select count(*) from customers;
+select sum(customer_id) from customers;
+select min(age) from customers
+```
