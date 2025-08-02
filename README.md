@@ -231,7 +231,7 @@ it is an operator.
 select * from test_table3 where country like '__d%';
 ```
 
-TODAys CODE: Used sql programz pre-existing code and new.
+TODAys CODE 8/2/2025: Used sql programz pre-existing code and new.
 ```sql
 select * from customers where first_name like '%j%';
 select * from customers where first_name like 'D%';
